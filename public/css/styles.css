@@ -1,0 +1,151 @@
+.separa-10,
+.separa {
+    height: 10px;
+}
+
+.separa-20 {
+    height: 20px;
+}
+
+.separa-40 {
+    height: 40px;
+}
+
+.separa-30 {
+    height: 30px;
+}
+
+.separa-50 {
+    height: 50px;
+}
+
+.relative {
+    position: relative
+}
+
+.wrapper-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .slide {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.banner .wrap-figure {
+    background: #ecba00;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: inline-block;
+    height: 32px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.banner .wrap-figure:after {
+    position: absolute;
+    display: block;
+    border-bottom: 32px solid #ecba00;
+    left: -48px;
+    border-left: 48px solid transparent;
+    content: '';
+}
+
+.banner .wrap-figure:before {
+    position: absolute;
+    display: block;
+    border-bottom: 32px solid #ecba00;
+    right: -48px;
+    border-right: 48px solid transparent;
+    content: '';
+}
+
+.buscador {
+    background: #ecba00;
+    padding: 30px 0px;
+}
+
+.buscador h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.buscador .btn {
+    margin-top: 31px;
+}
+
+.bienvenida {
+    padding: 60px 0px;
+}
+
+.bienvenida h2 {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+div.spacer {
+    height: 3px;
+    width: 100px;
+    margin: 10px 0px 20px;
+    background: #ecba00;
+}
+
+div.spacer.centrado {
+    margin: 10px auto 20px;
+}
+
+.features {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px;
+}
+
+.features .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.about {
+    padding: 60px 0px;
+}
+
+.about .padding {
+    padding-left: 30px;
+}
+
+.coche-reserva .imagen {
+    height: 200px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
