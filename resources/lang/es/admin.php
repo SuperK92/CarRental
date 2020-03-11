@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'permiso_conducir'      => 'Permiso de Conducir',
+    'fecha_nacimiento'      => 'Fecha de Nacimiento',
+    'telefono'              => 'Teléfono',
+    'direccion'             => 'Dirección', 
     'online'                => 'en línea',
     'login'                 => 'Iniciar sesión',
     'logout'                => 'Cerrar sesión',

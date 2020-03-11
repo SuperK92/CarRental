@@ -17,10 +17,6 @@ class Vehiculo extends Model
         return $this->belongsTo('App\Categoria');
     }
 
-    public function estado()
-    {
-        return $this->belongsTo('App\EstadoVehiculo');
-    }
 
     public function transmision()
     {
@@ -30,6 +26,11 @@ class Vehiculo extends Model
     public function combustible()
     {
         return $this->belongsTo('App\Combustible');
+    }
+
+    public function historico()
+    {
+        return $this->hasmany('App\Vehiculo_Historico');
     }
 
 }

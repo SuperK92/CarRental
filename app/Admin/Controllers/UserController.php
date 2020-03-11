@@ -38,7 +38,6 @@ class UserController extends AdminController
         $grid->column('fecha_nacimiento', __('Fecha nacimiento'));
         $grid->column('DNI', __('DNI'));
         $grid->column('permiso_conducir', __('Permiso conducir'));
-        $grid->column('nacionalidad', __('Nacionalidad'));
         $grid->column('telefono', __('Telefono'));
         $grid->column('direccion', __('Direccion'));
 
@@ -67,7 +66,6 @@ class UserController extends AdminController
         $show->field('fecha_nacimiento', __('Fecha nacimiento'));
         $show->field('DNI', __('DNI'));
         $show->field('permiso_conducir', __('Permiso conducir'));
-        $show->field('nacionalidad', __('Nacionalidad'));
         $show->field('telefono', __('Telefono'));
         $show->field('direccion', __('Direccion'));
 
@@ -92,7 +90,6 @@ class UserController extends AdminController
         $form->date('fecha_nacimiento', __('Fecha nacimiento'))->default(date('Y-m-d'));
         $form->text('DNI', __('DNI'));
         $form->text('permiso_conducir', __('Permiso conducir'));
-        $form->text('nacionalidad', __('Nacionalidad'));
         $form->text('telefono', __('Telefono'));
         $form->text('direccion', __('Direccion'));
 

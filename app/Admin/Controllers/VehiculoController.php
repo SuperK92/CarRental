@@ -33,9 +33,15 @@ class VehiculoController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('matricula', __('Matricula'));
-        $grid->column('modelo_id', __('Modelo id'));
-        $grid->column('categoria_id', __('Categoria id'));
-        $grid->column('estado_vehiculo_id', __('Estado id'));
+        // $grid->column('modelo_id', __('Modelo id'));
+        $grid->column('modelo_id')->display(function () {
+            return $this->modelo->marca->nombre . ' ' . $this->modelo->nombre;    
+        });
+        //$grid->column('categoria_id', __('Categoria id'));
+        $grid->column('categoria_id')->display(function () {
+            return $this->categoria->nombre;    
+        });
+        // $grid->column('estado_vehiculo_id', __('Estado id'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
         $grid->column('imagen', __('Imagen'));
@@ -98,9 +104,9 @@ class VehiculoController extends AdminController
         $form->select('categoria_id', __('Categoria'))->options(
             Categoria::all()->pluck('nombre', 'id') //retorna todos los nombres de las marcas como options
          );
-        $form->select('estado_vehiculo_id', __('Estado'))->options(
-            EstadoVehiculo::all()->pluck('nombre', 'id') //retorna todos los nombres de las marcas como options
-         );
+        // $form->select('estado_vehiculo_id', __('Estado'))->options(
+        //     EstadoVehiculo::all()->pluck('nombre', 'id') //retorna todos los nombres de las marcas como options
+        //  );
          
         $form->image('imagen', __('Imagen'));
 

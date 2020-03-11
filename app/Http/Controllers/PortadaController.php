@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Oficina;
 use Illuminate\Http\Request;
 
 class PortadaController extends Controller
@@ -11,8 +12,11 @@ class PortadaController extends Controller
     {
         //$marca = Marca::get();
 
+        $oficinas = Oficina::get();
+
         return view('portada', [
             //array con datos que pasas a la vista
+            'oficinas' => $oficinas
         ]);
     }
 }

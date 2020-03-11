@@ -17,7 +17,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name', 'email', 'password', 'apellido', 'fecha_nacimiento',
-        'DNI', 'permiso_conducir', 'nacionalidad', 'telefono',
+        'DNI', 'permiso_conducir', 'telefono',
         'direccion'
     ];
 
@@ -38,4 +38,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function reservas()
+    {
+        return $this->hasMany('App\Reserva');
+    }
 }

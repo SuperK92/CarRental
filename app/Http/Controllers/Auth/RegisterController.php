@@ -57,7 +57,6 @@ class RegisterController extends Controller
             'DNI' => ['required', 'string', 'max:255'],
             'permiso_conducir' => ['required', 'string', 'max:255'],
             'telefono' => ['required', 'string', 'max:255'],
-            'nacionalidad' => ['required', 'string', 'max:255'],
             'direccion' => ['required', 'string', 'max:255'],
 
         ]);
@@ -80,7 +79,6 @@ class RegisterController extends Controller
             'fecha_nacimiento'  =>  $data['fecha_nacimiento'],
             'permiso_conducir'  =>  $data['permiso_conducir'],
             'telefono'          =>  $data['telefono'],
-            'nacionalidad'      =>  $data['nacionalidad'],
             'direccion'         =>  $data['direccion'],
         ]);
     }

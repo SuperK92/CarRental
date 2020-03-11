@@ -22,5 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 //rutas de reserva
 Route::get('reservar-vehiculo', 'ReservaController@index')->name('reservar-vehiculo');
 Route::get('reservar-cliente', 'ReservaController@cliente')->name('reservar-cliente');
+Route::get('reservar-resumen', 'ReservaController@resumen')->name('reservar-resumen');
+Route::get('reservar-tramitada', 'ReservaController@tramitada')->name('reservar-tramitada');
 //guardar reserva
 Route::post('reservar/{paso}', 'ReservaController@reserva');

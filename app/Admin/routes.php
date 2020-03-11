@@ -26,4 +26,10 @@ Route::group([
     //clientes (users)
     $router->resource('users', UserController::class);
 
+    $router->resource('reservas', ReservaController::class);
+    $router->resource('vehiculo_historicos', VehiculoHistoricoController::class);
+
+    //oficinas
+    $router->resource('oficinas', OficinaController::class);
+
 });

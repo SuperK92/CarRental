@@ -13,10 +13,19 @@ class CreateVehiculoHistoricosTable extends Migration
      */
     public function up()
     {
-        // Schema::create('vehiculo__historicos', function (Blueprint $table) {
-        //     $table->bigIncrements('id');
-        //     $table->timestamps();
-        // });
+        Schema::create('vehiculos_historicos', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->integer('vehiculo_id')->unsigned();
+            $table->integer('oficina_id')->unsigned();
+
+            $table->date('fecha_inicio');
+            $table->date('fecha_fin');
+
+            $table->integer('estado_vehiculo_id')->unsigned();
+            $table->integer('reserva_id')->unsigned()->nullable();
+
+            $table->timestamps();
+        });
     }
 
     /**

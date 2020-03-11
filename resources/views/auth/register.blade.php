@@ -110,20 +110,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="nacionalidad" class="col-md-4 col-form-label text-md-right">{{ __('nacionalidad') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="nacionalidad" type="text" class="form-control @error('nacionalidad') is-invalid @enderror" name="nacionalidad" value="{{ old('nacionalidad') }}" required autocomplete="nacionalidad" autofocus>
-
-                                @error('nacionalidad')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
+                        
                         
                         <div class="form-group row">
                             <label for="direccion" class="col-md-4 col-form-label text-md-right">{{ __('direccion') }}</label>

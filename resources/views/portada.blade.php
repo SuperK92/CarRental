@@ -28,9 +28,10 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Lugar de Recogida</label>
                             <select name="oficina" class="form-control" required>
-                                <option value="1" selected>Aeropuerto Gran Canaria</option>
-                                <option value="2">Las Palmas Gran Canaria - Teatro</option>
-                                <option value="3">Maspalomas</option>
+                                @foreach ($oficinas as $oficina)
+                                    <option value="{{$oficina->id}}" @if($oficina->id == 1) selected @endif>{{$oficina->nombre}}</option>  
+                                    
+                                @endforeach
                             </select>
                           </div>
                     </div>
@@ -38,7 +39,7 @@
                     <div class="col-4">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Fecha de recogida</label>
-                            <input type="text" class="form-control fecha_recogida" name="fecha_recogida" required>
+                            <input type="text" class="form-control fecha_recogida" name="fecha_recogida" required readonly>
                           </div>
                     </div>
 

@@ -48,6 +48,12 @@
     width: 100%;
 }
 
+.slide h2,
+.slide h3 {
+    color: #fff;
+    text-align: center;
+}
+
 .banner .wrap-figure {
     background: #ecba00;
     position: absolute;

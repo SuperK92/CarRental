@@ -19,7 +19,6 @@ class AddRowsUserTable extends Migration
             $table->date('fecha_nacimiento');
             $table->string('DNI');
             $table->string('permiso_conducir');
-            $table->string('nacionalidad');
             $table->string('telefono');
             $table->string('direccion');
 
